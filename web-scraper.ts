@@ -20,5 +20,5 @@ const scrapWebsite = async (url: string) => {
     }
 };
 
-const url = 'https://www.crossinghoods.com/software-engineer-test/)';
+const url = 'https://www.crossinghoods.com/software-engineer-test/';
 scrapWebsite(url);
