@@ -5,5 +5,7 @@ const scrapWebsite = async (url: 'https://www.crossinghoods.com/software-enginee
     try {
         const { data } = await axios.get(url);
         const $ = cheerio.load(data);
+        const title = $('title').text();
+        console.log('Page Title:', title);
     }
 }
