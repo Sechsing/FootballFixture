@@ -2,7 +2,7 @@ import axios from 'axios';
 import * as cheerio from 'cheerio';
 import moment from 'moment';
 
-const scrapeWebsite = async (url: string) => {
+export const scrapeWebsite = async (url: string) => {
     try {
         const { data } = await axios.get(url);
         const $ = cheerio.load(data);
