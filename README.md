@@ -20,12 +20,14 @@ The scraper requires the following Node.js packages:
 - `ts-node`: A tool to run TypeScript files directly without needing a separate compilation step.
 
 In the terminal, run the following command to install the required packages:<br>
-```bash
+'''console
 npm install axios cheerio moment
+'''
 
 Make sure you also have the TypeScript definitions for these libraries. You can install the type definitions by running:<br>
-```bash
+'''console
 npm install --save-dev @types/axios @types/cheerio @types/moment
+'''
 
 ## Test Dependencies
 
@@ -36,16 +38,17 @@ To run the tests, the following additional dependencies are required:
 - `ts-jest`: A preprocessor for Jest to run TypeScript code.
 
 In the terminal, run the following command to install the dependencies:<br>
-```bash
+'''console
 npm install --save-dev jest @types/jest ts-jest
+'''
 
 ## Running the Scraper
-
-Once all dependencies are installed, the scraper can be run by executing the following command in the terminal:<br>
-```bash
+The scraper can be run by executing the following command in the terminal:<br>
+'''console
 npx ts-node scraper.ts
-
+'''
 
 To run the tests, use the following command:<br>
-```bash
+'''console
 npm test
+'''
